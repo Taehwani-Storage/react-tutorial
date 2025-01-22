@@ -37,8 +37,7 @@ function App() {
         })
     }
 
-    let nextId = useRef(6)
-
+    let nextId = useRef(7)
     let onInsert = () => {
         let user = {
             id: nextId.current,
@@ -48,7 +47,6 @@ function App() {
         }
 
         setArray([...array, user])
-
         setInputs({
             username: '',
             password: '',
@@ -58,8 +56,7 @@ function App() {
     }
 
     let onDelete = (id) => {
-        setArray(array.filter(e =>
-            e.id !== id))
+        setArray(array.filter(e => e.id !== id))
     }
 
     let onToggle = (id) => {

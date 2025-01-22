@@ -13,7 +13,6 @@ function MyRef() {
     // userRef는 특정 DOM 객체를 선택할 때 사용.
     // JS 코드에 'let 이름 = useRef()' 로 사용하고
     // 태그에는 ref={이름} 으로 작성.
-
     let form1 = useRef()
     let form2 = useRef()
     let form3 = useRef()

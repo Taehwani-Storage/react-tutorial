@@ -17,15 +17,12 @@ function Element({ele, onDelete, onToggle}) {
     }, [])*/ // deps는 해당 컴포넌트 안에 특정 요소가 변경되는지 감지하여
     // 변경이 되면 effect가 시작되는 것으로 인식.
     // 이때, return () => {...} 이 발생되지 않음.
-
     return (
         <div style={{color: ele.enable ? 'black':'red'}}>
             <hr/>
             <h1>
                 <b onClick={() => onToggle(ele.id)}>{ele.id}번 회원</b>
-                <button onClick={() => {
-                    onDelete(ele.id)
-                }}>X</button>
+                <button onClick={() => {onDelete(ele.id)}}>X</button>
             </h1>
             <h2>username: {ele.username}</h2>
             <h2>password: {ele.password}</h2>
