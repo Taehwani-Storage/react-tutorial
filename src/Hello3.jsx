@@ -4,8 +4,7 @@ function Hello3() {
     // jsx에서 스타일을 지정할 때, 다음과 같이 ㅂ려개의 JS 객체를 만들어 처리.
     let style = {
         color: 'red',
-        // 다음 코드는 에러가 남.
-        // font-size: 30px
+        // font-size: 30px 와 같은 코드는 에러가 남.
         // 우리가 스타일에서 -를 쓰면 모두 다 낙타등 표기법으로 치환해 작성해야 함.
         fontSize: '30px',
         backgroundColor: 'green'

@@ -6,9 +6,6 @@ import React from "react";
 // 컴포넌트가 보낸 값은 props 안에 객체의 형태로 저장되므로
 // props.속성이름 으로 해당 어트리뷰트 값을 불러옴
 function Hello(props) {
-    console.log(props.name)
-    console.log(props.color)
-
     let style = {
         color: props.color
     }
@@ -23,7 +20,7 @@ function Hello(props) {
 // 만양 외부에서 호출할 때, name이나 color를 넘겨주지 않을 경우를 대비해
 // 우리가 기본값을 세팅하고 싶다면 다음과 같이 지정.
 Hello.defaultProps = {
-    nam: '안 넘어옴',
+    name: '안 넘어옴',
     color: 'beige'
 }
 
